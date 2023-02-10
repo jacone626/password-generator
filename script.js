@@ -84,8 +84,11 @@ function writePassword(numberOfCharacters) {
 }
 
 
+function generateString(length) {
+  var result = "";
+  for (var i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * characters.length));
+  }
 
-/*var password = generateString(10);
-var passwordText = document.querySelector("#password");
-
-passwordText.value = password;*/
+  return result;
+}

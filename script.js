@@ -25,7 +25,7 @@ function passwordPrompt() {
     alert("The password must be between 8 and 128 characters")
   }
 
-  var uppercase = prompt("Do you want uppercase letters? (yes or no)")
+  var uppercase = confirm("Do you want uppercase letters?")
 
   if(uppercase == "yes") {
     uppercase == "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -35,7 +35,7 @@ function passwordPrompt() {
     uppercase == ""
   }
 
-var lowercase = prompt("Do you want lowercase letters? (yes or no)")
+var lowercase = confirm("Do you want lowercase letters?")
 
 
 if(lowercase == "yes") {
@@ -46,7 +46,7 @@ if (lowercase == "no") {
   lowercase == ""
 }
 
-var numbers = prompt("Do you want numbers? (yes or no)")
+var numbers = confirm("Do you want numbers?")
 
 if(numbers == "yes") {
   numbers == "0123456789"
@@ -56,7 +56,7 @@ if (numbers == "no") {
   numbers == ""
 }
 
-var specialCharacter = prompt("Do you want any special characters? (yes or no)")
+var specialCharacter = confirm("Do you want any special characters?")
 
 if(specialCharacter== "yes") {
   specialCharacter == "0!@#$%^&*()"
@@ -75,18 +75,6 @@ function writePassword() {
   passwordText.value = password;
 }
 
-
-function generatePassword() {
-  var length = 129,
-      charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()",
-      retVal = "";
-  for (var i = 0, n = charset.length; i < length && i > 7; i++) {
-      retVal += charset.charAt(Math.random() * n);
-  }
-  return retVal;
-}
-
-console.log(generatePassword)
 
 
 const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()';

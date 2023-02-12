@@ -3,26 +3,16 @@ var generateBtn = document.querySelector("#generate");
 
 var characters = ""
 
-// Write password to the #password input
-
-//If you click on the button, then prompt for password length, include lowercase, include uppercase, numbers, and special characters.
-//once input is validated, password is generated on page or in alert
 
 generateBtn.addEventListener("click", passwordPrompt);
 
-/*
-var numberOfCharacters = 129
-var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-var lowercase = "abcdefghijklmnopqrstuvwxyz"
-var numbers = "0123456789"
-var specialCharacter = "!@#$%^&*()?/"
-*/
 
+//This function creates the different prompts for the password.
 function passwordPrompt() {
   var numberOfCharacters = 0;
 
   while (numberOfCharacters < 8 || numberOfCharacters > 128) {
-    numberOfCharacters = prompt("How many characters?")
+    numberOfCharacters = prompt("How many characters would you like your password to contain?")
     if (numberOfCharacters < 8) {
       alert("The password must contain at least 8 characters.");
     }

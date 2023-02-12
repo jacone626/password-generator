@@ -9,15 +9,22 @@ N/A
 ## Usage
 The webpage has a simple design with a header at the top and a box that will eventually display your secure password. In order to create this password, you must first click on the red "Generate Password" button. This button can be seen in the photo of the site below.
 
-![picture of webpage with Password Generator at the top and a box for the password in the center of the page](assets/images/webpage-screenshot.png)
+![picture of webpage with Password Generator at the top and a box for the password in the center of the page](images/password-generator-website.png)
 
-Once you click on the "Generate Password" button, you will be prompted to enter how many characters you want in your password. If you enter a number less than 8 or more than 128 an alert will pop-up letting the user know that the password must be at least 8 characters and less than 129 characters. Once you enter a valid character amount, you are prompted to confirm if you want uppercase letters, lowercase letters, special characters, or numbers in your password. By clicking on the "OK" button seen in the photo, you are confirming that you want that property included in your password. By clicking on "Cancel", you are confirming that you do NOT want that property included in your password. For example, if I click on "OK" for numbers, then they will be present in my password; however, if I click on "Cancel" for the numbers property, then you will not have numbers in your password. Once you reach the final prompt, which is asking about special characters, your password will be generated and replace the "Your Secure Password" phrase on the webpage. To re-create a new password, simply hit the "Generate Password" button again and enter the new parameters.
+Once you click on the "Generate Password" button, you will be prompted to enter how many characters you want in your password. 
+
+![picture of prompt asking how many characters you want to include in your password](images/password-generator-prompt.png)
+
+If you enter a number less than 8 or more than 128 an alert will pop-up letting the user know that the password must be at least 8 characters and less than 129 characters. Once you enter a valid character amount, you are prompted to confirm if you want uppercase letters, lowercase letters, special characters, or numbers in your password. By clicking on the "OK" button seen in the photo, you are confirming that you want that property included in your password. By clicking on "Cancel", you are confirming that you do NOT want that property included in your password. For example, if I click on "OK" for numbers, then they will be present in my password; however, if I click on "Cancel" for the numbers property, then you will not have numbers in your password. Once you reach the final prompt, which is asking about special characters, your password will be generated and replace the "Your Secure Password" phrase on the webpage. To re-create a new password, simply hit the "Generate Password" button again and enter the new parameters.
+
+![picture of a generated password that replaced the "Your secure password" phrase](images/final-password.png)
 
 Below is a link to the active website:
 
+https://jacone626.github.io/password-generator/
 
 ## Credits
-N/A
+https://dev.to/code_mystery/random-password-generator-using-javascript-6a
 
 ## License
 Please refer to the license in the repo.
